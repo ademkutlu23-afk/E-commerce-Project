@@ -1,3 +1,4 @@
+import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 
 function PageContent() {
