@@ -22,7 +22,7 @@ import product8 from "../assets/product8.png";
 import product9 from "../assets/product9.png";
 import product10 from "../assets/product10.png";
 import featured1 from "../assets/featured1.png";
-import featured2 from "../assets/featured2.png";
+import featured2 from "../assets/Featured2.png";
 import featuredPost1 from "../assets/FeaturedPost1.png";
 import featuredPost2 from "../assets/FeaturedPost2.png";
 import FeaturedPostCard from "../components/FeaturedPostCard";
