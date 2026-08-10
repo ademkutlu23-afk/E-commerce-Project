@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div className="hidden min-h-[58px] w-full bg-[#252B42] text-white md:flex">
-        <div className="mx-auto flex w-full max-w-[1292px] items-center justify-between px-6 text-xs font-bold">
+        <div className="mx-auto flex w-full max-w-[1050px] items-center justify-between px-6 text-xs font-bold md:px-0">
           <div className="flex items-center gap-5">
             <p>(225) 555-0118</p>
             <p>michelle.rivera@example.com</p>
@@ -30,7 +30,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[1292px] flex-wrap items-center justify-between px-6 py-4">
+      <div className="mx-auto flex w-full max-w-[1050px] flex-wrap items-center justify-between px-6 py-4 md:px-0">
         <Link className="text-2xl font-bold text-[#252B42]" to="/">
           Bandage
         </Link>

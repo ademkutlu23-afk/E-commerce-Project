@@ -259,7 +259,7 @@ function HomePage() {
           <p className="text-base font-bold text-[#23A6F0]">
             Featured Products
           </p>
-          <h2 className="mt-4 text-4xl font-bold leading-tight text-[#252B42] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-[#252B42] md:text-4xl">
             We love what we do
           </h2>
           <p className="mx-auto mt-4 max-w-[320px] text-sm leading-6 text-[#737373] md:mx-0">
