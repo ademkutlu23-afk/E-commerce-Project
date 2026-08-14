@@ -29,7 +29,7 @@ import FeaturedPostCard from "../components/FeaturedPostCard";
 
 const products = [
   {
-    id: 1,
+    id: 13,
     image: product1,
     title: "Graphic Design",
     department: "English Department",
@@ -37,7 +37,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 2,
+    id: 14,
     image: product2,
     title: "Graphic Design",
     department: "English Department",
@@ -45,7 +45,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 3,
+    id: 15,
     image: product3,
     title: "Graphic Design",
     department: "English Department",
@@ -53,7 +53,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 4,
+    id: 16,
     image: product4,
     title: "Graphic Design",
     department: "English Department",
@@ -61,7 +61,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 5,
+    id: 17,
     image: product5,
     title: "Graphic Design",
     department: "English Department",
@@ -69,7 +69,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 6,
+    id: 18,
     image: product6,
     title: "Graphic Design",
     department: "English Department",
@@ -77,7 +77,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 7,
+    id: 19,
     image: product7,
     title: "Graphic Design",
     department: "English Department",
@@ -85,7 +85,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 8,
+    id: 20,
     image: product8,
     title: "Graphic Design",
     department: "English Department",
@@ -93,7 +93,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 9,
+    id: 21,
     image: product9,
     title: "Graphic Design",
     department: "English Department",
@@ -101,7 +101,7 @@ const products = [
     newPrice: "$6.48",
   },
   {
-    id: 10,
+    id: 22,
     image: product10,
     title: "Graphic Design",
     department: "English Department",
@@ -221,6 +221,7 @@ function HomePage() {
           {products.map((product) => (
             <div key={product.id} className="w-full sm:w-[48%] lg:w-[18%]">
               <ProductCard
+                id={product.id}
                 image={product.image}
                 title={product.title}
                 department={product.department}
