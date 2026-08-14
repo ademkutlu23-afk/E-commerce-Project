@@ -112,7 +112,7 @@ function ProductDetailPage() {
             </p>
 
             <div className="mt-8 border-t border-[#ECECEC] pt-7">
-              <h2 className="text-xl font-bold text-[#252B42]">Why You&apos;ll Love It</h2>
+              <h2 className="text-xl font-bold text-[#252B42]">Why You Will Love It</h2>
               <div className="mt-5 flex flex-col gap-4 text-sm text-[#737373]">
                 <p className="flex items-center gap-3"><Check size={18} className="text-[#23A6F0]" /> Soft and comfortable fabric</p>
                 <p className="flex items-center gap-3"><Check size={18} className="text-[#23A6F0]" /> Easy to combine</p>
@@ -122,7 +122,7 @@ function ProductDetailPage() {
           </div>
 
           <div className="md:w-1/3">
-            <h2 className="text-2xl font-bold text-[#252B42]">Care &amp; Delivery</h2>
+            <h2 className="text-2xl font-bold text-[#252B42]">Care and Delivery</h2>
             <div className="mt-6 flex flex-col text-sm text-[#737373]">
               <p className="flex items-center gap-3 border-b border-[#ECECEC] py-5"><ChevronRight size={18} /> Machine wash at 30°C</p>
               <p className="flex items-center gap-3 border-b border-[#ECECEC] py-5"><ChevronRight size={18} /> Do not use bleach</p>
