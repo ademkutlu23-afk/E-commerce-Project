@@ -12,8 +12,6 @@ const heroSlides = [
       "We know how large objects will act, but things on a small scale.",
     image: heroImage,
     imageAlt: "Summer collection",
-    imageStyle: "md:w-1/2",
-    hasCircle: false,
   },
   {
     season: "WINTER 2020",
@@ -22,8 +20,6 @@ const heroSlides = [
       "Discover our new collection designed for comfort and style.",
     image: winterImage,
     imageAlt: "Winter collection",
-    imageStyle: "md:w-[46%]",
-    hasCircle: true,
   },
 ];
 
@@ -54,7 +50,7 @@ function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative mx-6 mt-10 flex h-[600px] flex-col overflow-hidden rounded-xl bg-linear-to-r from-[#96E9FB] to-[#ABECD6] md:mx-auto md:h-[574px] md:max-w-[1292px] md:flex-row md:items-center">
+    <section className="relative mx-6 mt-10 flex h-[600px] w-[calc(100%-3rem)] flex-col overflow-hidden rounded-xl bg-linear-to-r from-[#96E9FB] to-[#ABECD6] md:mx-auto md:h-[574px] md:max-w-[1292px] md:flex-row md:items-center">
       <button
         type="button"
         onClick={previousSlide}
@@ -85,16 +81,11 @@ function HeroSlider() {
         </Link>
       </div>
 
-      <div
-        className={`relative mt-auto flex w-full items-end justify-center md:ml-auto md:mt-0 md:h-full ${activeSlide.imageStyle}`}
-      >
-        {activeSlide.hasCircle && (
-          <div className="absolute h-[85%] w-[85%] rounded-full bg-white" />
-        )}
+      <div className="relative mt-auto flex w-full items-end justify-center md:ml-auto md:mt-0 md:h-full md:w-1/2">
         <img
           src={activeSlide.image}
           alt={activeSlide.imageAlt}
-          className="relative max-h-[360px] w-full object-contain md:max-h-full"
+          className="relative h-[360px] w-full object-contain md:h-[500px]"
         />
       </div>
 

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="mt-16 text-[#737373]">
       <div className="bg-[#FAFAFA]">
-        <div className="mx-6 flex flex-col gap-6 border-b border-[#E6E6E6] py-10 md:mx-auto md:max-w-[1050px] md:flex-row md:items-center md:justify-between">
+        <div className="mx-6 flex flex-col gap-6 border-b border-[#E6E6E6] py-10 md:mx-auto md:max-w-[1292px] md:flex-row md:items-center md:justify-between">
           <Link to="/" className="text-2xl font-bold text-[#252B42]">
             Bandage
           </Link>
@@ -24,7 +24,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mx-6 flex flex-col gap-10 py-12 md:mx-auto md:max-w-[1050px] md:flex-row md:justify-between">
+      <div className="mx-6 flex flex-col gap-10 py-12 md:mx-auto md:max-w-[1292px] md:flex-row md:justify-between">
         <div>
           <h2 className="font-bold text-[#252B42]">Company Info</h2>
           <div className="mt-5 flex flex-col gap-3 text-sm font-bold">
@@ -88,7 +88,7 @@ function Footer() {
       </div>
 
       <div className="bg-[#FAFAFA]">
-        <p className="mx-6 py-6 text-sm font-bold md:mx-auto md:max-w-[1050px]">
+        <p className="mx-6 py-6 text-sm font-bold md:mx-auto md:max-w-[1292px]">
           Made With Love By Finland All Right Reserved
         </p>
       </div>

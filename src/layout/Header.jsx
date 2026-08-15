@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div className="hidden min-h-[58px] w-full bg-[#252B42] text-white md:flex">
-        <div className="mx-auto flex w-full max-w-[1050px] items-center justify-between px-6 text-xs font-bold md:px-0">
+        <div className="mx-auto flex w-full max-w-[1292px] items-center justify-between px-6 text-xs font-bold md:px-0">
           <div className="flex items-center gap-5">
             <p>(225) 555-0118</p>
             <p>michelle.rivera@example.com</p>
@@ -30,7 +30,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[1050px] flex-wrap items-center justify-between px-6 py-4 md:px-0">
+      <div className="mx-auto flex w-full max-w-[1292px] flex-wrap items-center justify-between px-6 py-5 md:px-0">
         <Link className="text-2xl font-bold text-[#252B42]" to="/">
           Bandage
         </Link>
@@ -39,7 +39,7 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
           className={`${
             menuOpen ? "flex" : "hidden"
-          } order-3 mt-6 w-full flex-col items-center gap-5 text-sm font-bold text-[#737373] md:order-none md:mt-0 md:flex md:w-auto md:flex-row md:gap-4 md:text-xs`}
+          } order-3 mt-6 w-full flex-col items-center gap-5 text-sm font-bold text-[#737373] md:order-none md:mt-0 md:flex md:w-auto md:flex-row md:gap-6 md:text-sm`}
         >
           <Link to="/">Home</Link>
           <Link to="/shop" className="flex items-center gap-1">
@@ -49,25 +49,25 @@ export default function Header() {
           <Link to="/about">About</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/pages">Pages</Link>
+          <Link to="/team">Team</Link>
         </nav>
 
-        <div className="flex items-center gap-4 text-[#23A6F0] md:gap-3">
+        <div className="flex items-center gap-4 text-[#23A6F0] md:gap-4">
           <Link
             to="/login"
-            className="hidden items-center gap-1 text-xs font-bold md:flex"
+            className="hidden items-center gap-2 text-sm font-bold md:flex"
           >
-            <User size={13} />
+            <User size={17} />
             Login / Register
           </Link>
 
           <button type="button" aria-label="Ara">
-            <Search className="size-6 md:size-4" />
+            <Search className="size-6 md:size-[18px]" />
           </button>
 
           <Link to="/cart" className="flex items-center gap-1" aria-label="Sepet">
-            <ShoppingCart className="size-6 md:size-4" />
-            <span className="hidden text-[10px] md:inline">1</span>
+            <ShoppingCart className="size-6 md:size-[18px]" />
+            <span className="hidden text-xs md:inline">1</span>
           </Link>
 
           <Link
@@ -75,8 +75,8 @@ export default function Header() {
             className="hidden items-center gap-1 md:flex"
             aria-label="Favoriler"
           >
-            <Heart size={16} />
-            <span className="text-[10px]">1</span>
+            <Heart size={18} />
+            <span className="text-xs">1</span>
           </Link>
 
           <button
