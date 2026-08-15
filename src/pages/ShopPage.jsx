@@ -9,19 +9,8 @@ import category2 from "../assets/shop-category2.jpg";
 import category3 from "../assets/shop-category3.jpg";
 import category4 from "../assets/shop-category4.jpg";
 import category5 from "../assets/shop-category5.jpg";
-import dep1 from "../assets/dep1.png";
-import dep2 from "../assets/dep2.png";
-import dep3 from "../assets/dep3.png";
-import dep4 from "../assets/dep4.png";
-import dep5 from "../assets/dep5.png";
-import dep6 from "../assets/dep6.png";
-import dep7 from "../assets/dep7.png";
-import dep8 from "../assets/dep8.png";
-import dep9 from "../assets/dep9.png";
-import dep10 from "../assets/dep10.png";
-import dep11 from "../assets/dep11.png";
-import dep12 from "../assets/dep12.png";
 import ProductCard from "../components/ProductCard";
+import { products } from "../data/products";
 import { LayoutGrid, List } from "lucide-react";
 
 const shopCategories = [
@@ -30,104 +19,6 @@ const shopCategories = [
   { image: category3, title: "CLOTHS", itemCount: "5 Items" },
   { image: category4, title: "CLOTHS", itemCount: "5 Items" },
   { image: category5, title: "CLOTHS", itemCount: "5 Items" },
-];
-const departments = [
-  {
-    id: 1,
-    image: dep1,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 2,
-    image: dep2,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 3,
-    image: dep3,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 4,
-    image: dep4,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 5,
-    image: dep5,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 6,
-    image: dep6,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 7,
-    image: dep7,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 8,
-    image: dep8,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 9,
-    image: dep9,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 10,
-    image: dep10,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 11,
-    image: dep11,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
-  {
-    id: 12,
-    image: dep12,
-    title: "Graphic Design",
-    department: "English Department",
-    oldPrice: "$16.48",
-    newPrice: "$6.48",
-  },
 ];
 function ShopPage() {
   return (
@@ -210,17 +101,18 @@ function ShopPage() {
   </div>
 </div>
 <div className="mx-6 mt-12 flex flex-col gap-y-12 md:mx-auto md:max-w-[1050px] md:flex-row md:flex-wrap md:justify-between">
-  {departments.map((department) => (
-    <div key={department.id} className="w-full md:w-[22%]">
-      <ProductCard
-        image={department.image}
-        title={department.title}
-        department={department.department}
-        oldPrice={department.oldPrice}
-        newPrice={department.newPrice}
-      />
-    </div>
-  ))}
+  {products.slice(0, 12).map((product) => (
+  <div key={product.id} className="w-full md:w-[22%]">
+    <ProductCard
+     id={product.id}
+      image={product.image}
+      title={product.title}
+      department={product.department}
+      oldPrice={product.oldPrice}
+      newPrice={product.newPrice}
+    />
+  </div>
+))}
 </div>
 
 <div className="mt-12 flex justify-center pb-12">
@@ -259,6 +151,7 @@ function ShopPage() {
         <img className="h-8 w-auto" src={awsLogo} alt="AWS" />
         <img className="h-8 w-auto" src={redditLogo} alt="Reddit" />
       </section>
+      
        
 
     </section>
