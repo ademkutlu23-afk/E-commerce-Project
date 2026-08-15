@@ -2,6 +2,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import ShopPage from "../pages/ShopPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
+import ContactPage from "../pages/ContactPage";
 
 function PageContent() {
   return (
@@ -10,6 +11,7 @@ function PageContent() {
   <Route exact path="/" component={HomePage} />
   <Route exact path="/shop" component={ShopPage} />
   <Route exact path="/product/:productId" component={ProductDetailPage} />
+  <Route exact path="/contact" component={ContactPage} />
   
   <Redirect to="/" />
 </Switch>
