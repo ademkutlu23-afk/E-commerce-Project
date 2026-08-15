@@ -139,7 +139,7 @@ function HomePage() {
     <>
       <HeroSlider />
 
-      <section className="mx-6 flex w-[calc(100%-3rem)] flex-col items-center gap-10 py-10 md:mx-auto md:max-w-[1050px] md:flex-row md:justify-between">
+      <section className="mx-6 flex w-[calc(100%-3rem)] flex-col items-center gap-10 py-10 md:mx-auto md:max-w-[1292px] md:flex-row md:justify-between">
         <img className="h-8 w-auto" src={hooliLogo} alt="Hooli" />
         <img className="h-8 w-auto" src={lyftLogo} alt="Lyft" />
         <img className="h-8 w-auto" src={piedPiperLogo} alt="Pied Piper" />
@@ -148,7 +148,7 @@ function HomePage() {
         <img className="h-8 w-auto" src={redditLogo} alt="Reddit" />
       </section>
 
-      <section className="mx-6 flex w-[calc(100%-3rem)] flex-col gap-3 py-10 md:mx-auto md:max-w-[1050px] md:flex-row">
+      <section className="mx-6 flex w-[calc(100%-3rem)] flex-col gap-3 py-10 md:mx-auto md:max-w-[1292px] md:flex-row">
         <div className="relative h-[420px] overflow-hidden md:h-[500px] md:w-1/2">
           <img
             src={firstProductImage}
@@ -206,7 +206,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="mx-6 py-10 md:mx-auto md:max-w-[1050px]">
+      <section className="mx-6 w-[calc(100%-3rem)] py-10 md:mx-auto md:max-w-[1292px]">
         <div className="mb-10 text-center">
           <p className="text-sm text-[#737373]">Featured Products</p>
           <h2 className="mt-2 text-2xl font-bold text-[#252B42]">
@@ -242,7 +242,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="mx-6 flex flex-col gap-10 py-16 md:mx-auto md:max-w-[1050px] md:flex-row md:items-center">
+      <section className="mx-6 flex w-[calc(100%-3rem)] flex-col gap-10 py-16 md:mx-auto md:max-w-[1292px] md:flex-row md:items-center">
         <div className="flex w-full gap-3 md:w-1/2">
           <img
             src={featured1}
@@ -274,7 +274,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="mx-6 py-16 text-center md:mx-auto md:max-w-[1050px]">
+      <section className="mx-6 w-[calc(100%-3rem)] py-16 text-center md:mx-auto md:max-w-[1292px]">
         <p className="text-sm text-[#737373]">Featured Products</p>
         <h2 className="mt-2 text-2xl font-bold text-[#252B42]">
           THE BEST SERVICES
@@ -317,7 +317,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="mx-6 py-16 md:mx-auto md:max-w-[1050px]">
+      <section className="mx-6 w-[calc(100%-3rem)] py-16 md:mx-auto md:max-w-[1292px]">
   <div className="text-center">
     <p className="text-sm font-bold text-[#23A6F0]">
       Practice Advice
