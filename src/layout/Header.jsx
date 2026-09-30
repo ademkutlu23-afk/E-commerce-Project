@@ -54,7 +54,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4 text-[#23A6F0] md:gap-4">
           <Link
-            to="/login"
+            to="/signup"
             className="hidden items-center gap-2 text-sm font-bold md:flex"
           >
             <User size={17} />
